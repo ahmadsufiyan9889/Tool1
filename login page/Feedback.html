@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+    <div class="sidebar">
+        <button  class="close-button" onclick="closeSidebar()">&times;</button>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="new_page.html">News</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contect.html">Contact</a></li>
+            <li><a href="Feedback.html">Feedback</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <button class="open-button" onclick="openSidebar()">&#9776;</button>
+        <!-- write coe here -->
+    </div>
+    <script>
+        function openSidebar() {
+          document.querySelector(".sidebar").style.width = "12rem";
+          document.querySelector(".open-button").style.visibility = "hidden";
+      }
+      
+      function closeSidebar() {
+          document.querySelector(".sidebar").style.width = "0";
+          document.querySelector(".open-button").style.visibility = "visible";
+      }
+      
+      </script>
+</body>
+</html>

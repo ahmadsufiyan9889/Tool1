@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<style>
+    body {
+        background-image: url('https://wallpapers.com/images/hd/aesthetic-baby-blue-gradient-i4clvor3aimq8rzu.jpg');
+         /* background-repeat:no-repeat;
+        background-size: cover; */
+    }
+    .container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+label, input, textarea {
+    display: block;
+    margin-bottom: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+</style>
+<body>
+    <div class="sidebar">
+        <button  class="close-button" onclick="closeSidebar()">&times;</button>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="new_page.html">News</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contect.html">Contact</a></li>
+            <li><a href="Feedback.html">Feedback</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <button class="open-button" onclick="openSidebar()">&#9776;</button>
+        <h1>Contact Us</h1>
+        <b><p>If you have any questions, feedback, or would like to report any issues related to our misinformation detection tool,
+         please feel free to contact us.We are here to help!</p></b>
+        
+        <h2>Contact Information</h2>
+        <p><strong>Name:</strong> Sufiyan Ahmad</p>
+        <p><strong>Phone Number:</strong> 988-902-4647</p>
+        <p><strong>Email:</strong> <a href="mailto:ahmadsufiyan9889@gmail.com">ahmadsufiyan9889@gmail.com</a></p>
+    
+        <h2>Contact Form</h2>
+        <p>You can also reach out to us by filling out the contact form below:</p>
+    
+        <div class="container">
+            <h1>Contact Us</h1>
+            <form action="process_contact.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name "email" required>
+    
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+    
+                <button type="submit">Submit</button>
+            </form>
+          <!-- write coe here -->
+    </div>
+    <script>
+        function openSidebar() {
+          document.querySelector(".sidebar").style.width = "12rem";
+          document.querySelector(".open-button").style.visibility = "hidden";
+      }
+      
+      function closeSidebar() {
+          document.querySelector(".sidebar").style.width = "0";
+          document.querySelector(".open-button").style.visibility = "visible";
+      }
+      
+      </script>
+</body>
+</html>

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+           h1 {
+            text-align: center;
+
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 0.1rem;
+            width: 80%;
+            margin: auto;
+            margin-top: 2rem;
+            align-items: center;
+        }
+
+        .container #about {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            width: 90%;
+            margin: auto;
+            text-align: justify;
+            margin-bottom: 2rem;
+        }
+
+        .details {
+            width: 90%;
+            margin: auto;
+            margin-top: 0.5rem;
+        }
+
+        .details .title {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 1rem;
+            padding: 10px;
+            border: 2px solid black;
+            border-radius: 5px;
+            width: 90%;
+            margin: auto;
+        }
+
+        .title span {
+            float: right;
+            font-size: larger;
+            padding: 3px 10px;
+            background-color: white;
+            border-radius: 100%;
+        }
+
+        .details .content-2 {
+            text-align: justify;
+            height: 0;
+            overflow: hidden;
+            background-color: white;
+            transition: height 0.8s ease-out;
+            width: 90%;
+            margin: auto;
+            margin-top: 0.5rem;
+            border-radius: 10px;
+            font-size: 17px;
+            
+        }
+
+        .details:hover > .content-2{
+            height: 15rem;
+            padding: 10px;
+        }
+
+        #language {
+            overflow: auto;
+        }
+        .team-member{
+            width: 75%;
+            margin: 2rem auto;
+            
+        
+            
+        }
+        .team-member h3{
+            text-align: center;
+        }
+        .member{
+            display: flex;
+            flex-wrap: wrap;
+            gap:2rem;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .team{
+           padding: auto;
+           background-color: darkgray;
+           border-radius: 10px;
+           box-shadow: 2px 2px 3px 2px rgb(80, 79, 79);
+           
+        }
+        .team img{
+            width:19rem;
+            height:16rem;
+            border-radius: 10px;
+        }
+
+        .data .sufiyan{
+            text-align: center;
+            margin:1rem;
+        }
+        .footer{
+            width:80%;
+            margin:auto;
+        }
+    </style>
+</head>
+<style>
+
+  body  {
+
+background-image: url('https://wallpapers.com/images/hd/blank-white-background-xbsfzsltjksfompa.jpg');
+}
+</style>
+<body>
+    
+    <div class="sidebar">
+        <button  class="close-button" onclick="closeSidebar()">&times;</button>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="new_page.html">News</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contect.html">Contact</a></li>
+            <li><a href="Feedback.html">Feedback</a></li>
+        </ul>
+    </div>
+    <div class="about-content">
+        <button class="open-button" onclick="openSidebar()">&#9776;</button>
+          <!-- write coe here -->
+          <h1> Welcome to the Miss Information Detection Tool</h1>
+          <div class="container">
+              <div id="about">Purpose: The primary purpose of misinformation detection tools is to identify and flag content that contains false or misleading information. This could include fake news, rumors, hoaxes, conspiracy theories, and other types of deceptive content.
+              </div>
+              <div class="details">
+                  <div class="title">Methods<span>&#8595;</span></div>
+                  <div class="content-2">Misinformation detection tools use a variety of methods to identify misleading content. These methods often involve natural language processing (NLP), machine learning, and data analysis techniques. They may analyze the language used, the sources of information, and the spread of content on social media and websites.
+
+                  </div>
+              </div>
+              <div class="details" >
+                  <div class="title" > Features <span>&#8595;</span></div>
+                  <div class="content-2">
+                    These tools may have features such as sentiment analysis, fact-checking, source verification, and real-time monitoring of online conversations. Some tools can also classify content into categories like political misinformation, health-related misinformation, or general misinformation.
+
+
+                  </div>
+              </div>
+              <div class="details">
+                  <div class="title" >User Engagement:<span>&#8595;</span></div>
+                  <div class="content-2">In some cases, misinformation detection tools are used by individuals, fact-checking organizations, or social media platforms to help users spot false information. They may provide warnings or labels on content that has been identified as misleading.
+                      know..</div>
+              </div>
+              <div class="details">
+                  <div class="title" > Use the Scripting Language <span>&#8595;</span></div>
+                  <div class="content-2" id="language">
+                      <b>HTML</b>(HyperText Markup Language) <b>Css</b>(Cascading Style Sheets) and <b>Js</b>(Javascript)
+                      language used for creating this website<br>
+                      <div class="script">
+                          <h3>HTML</h3>
+                          <div>
+                              which stands for "HyperText Markup Language," is the basic language used to create and structure
+                              websites on the internet. Think of it as the building blocks that define how a webpage looks and
+                              what content it contains. With HTML, you can create headings, paragraphs, images, links, and
+                              other elements that make up a webpage. It's like giving instructions to your web browser on how
+                              to display information and where to place different parts of a webpage.
+                          </div>
+                      </div>
+                      <div class="script">
+                          <h3>CSS</h3>
+                          <div>
+                              CSS, short for "Cascading Style Sheets," is a language used to control the visual presentation
+                              and layout of web pages that are written in HTML. While HTML defines the structure and content
+                              of a webpage, CSS is responsible for making that content look visually appealing and
+                              well-organized.
+                              <br>
+      
+                              In simpler terms, CSS allows you to apply styles to HTML elements. These styles can include
+                              things like colors, fonts, spacing, borders, and positioning. It's like giving your webpage a
+                              set of instructions on how it should be displayed, making it easier to create consistent and
+                              attractive designs across different web pages. CSS helps separate the content (HTML) from its
+                              appearance (styling), allowing for greater flexibility and maintainability in web design.
+                          </div>
+                      </div>
+                      <div class="script">
+                          <h3>JAVASCRIPT</h3>
+                          <div>
+                              JavaScript (often abbreviated as "JS") is a programming language that adds interactivity and
+                              dynamic behavior to websites. It's like the "magic" behind the scenes that makes web pages
+                              respond to user actions without needing to reload the whole page.
+                              <br>
+      
+                              With JavaScript, you can create things like pop-up windows, interactive forms, animations, and
+                              even more complex applications like online games or real-time chat systems. It allows you to
+                              control how elements on a webpage behave, like what happens when you click a button, move your
+                              mouse, or submit a form.
+                              <br>
+      
+                              In short, JavaScript brings life to static web pages by enabling them to react to your actions
+                              and provide a more engaging and user-friendly experience.
+                          </div>
+                      </div>
+                      <div class="script">
+                        <h3>python</h3>
+                        <div>
+                            Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.
+                            Python can be used on a server to create web applications.
+                            <br>
+                            <br>
+Python can be used alongside software to create workflows.
+Python can connect to database systems. It can also read and modify files.
+Python can be used to handle big data and perform complex mathematics.
+Python can be used for rapid prototyping, or for production-ready software development.
+        
+
+                  </div>
+              </div>
+          </div>
+          </div>
+      
+
+    </div>
+    <script>
+        function openSidebar() {
+          document.querySelector(".sidebar").style.width = "12rem";
+          document.querySelector(".open-button").style.visibility = "hidden";
+      }
+      
+      function closeSidebar() {
+          document.querySelector(".sidebar").style.width = "0";
+          document.querySelector(".open-button").style.visibility = "visible";
+      }
+
+    //   const show_data = () =>{
+    //     document.querySelectorAll(".content-2")[0].classList.toggle('content-style')
+        
+    //   }
+      
+      </script>
+      <h1 style="color:red;"></h1>
+</body>
+</html>
